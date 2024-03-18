@@ -3,7 +3,7 @@ const Table = ({ sat }) => {
   const headersName = Object.keys(sat[0]).slice(1)
   headersName.splice(3,1)
 
-  const displayHeader = (name) => {
+  const displayHeaderName = (name) => {
     return (
       name === 'name' ? 'Name' : 
       name === 'launchDate' ? 'Launch Date' :
@@ -17,7 +17,7 @@ const Table = ({ sat }) => {
     <thead>
      <tr>
      {
-     headersName.map((value,id) =>(<th key={id}>{displayHeader(value)}</th>))
+     headersName.map((value,id) =>(<th key={id}>{displayHeaderName(value)}</th>))
      
      }
      </tr>
