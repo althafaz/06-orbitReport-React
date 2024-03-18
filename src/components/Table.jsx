@@ -11,6 +11,7 @@ const Table = ({ sat }) => {
       name === 'operational' ? 'Status' : 'unexepcted data'
     )
   }
+  
   return (
     <table>
     <thead>
